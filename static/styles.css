@@ -104,7 +104,6 @@ section#inicio{
   background-position: center;
   width: 100%;
   height: 100vh;
-  margin: 15px;
 }
 
 section#inicio h2{
@@ -132,4 +131,50 @@ section#inicio div#arraste a{
   text-decoration: none;
   color: #fff;
 
+}
+
+i.menu-mobile{
+  position: fixed;
+  color:#fff;
+  background-color: #01a3be;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  z-index: 10;
+  height: 45px;
+  width: 45px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.menu-nav-active{
+  overflow-y: hidden;
+}
+.menu-nav-active #header{
+  left: 0;
+}
+
+@media(max-width: 1024px){
+  #header{
+    left: -300px;
+  }
+  i.menu-mobile{
+    display: flex;
+  }
+  section#inicio h2{
+    margin-left: 10px;
+    font-size: 2.25rem
+  }
+  span#subtitle{
+    margin-right: 0;
+    font-size: 1rem;
+  }
+  #main{
+    margin-left: 0;
+  }
+  section#inicio span#subtitle{
+    margin-left: 10px;
+  }
 }
