@@ -4,8 +4,11 @@ html, body{
   font-family: 'Roboto Slab', 'Arial';
   width: 100%;
   height: 100%;
-}
 
+}
+html{
+  scroll-behavior: smooth
+}
 #header{
   position: fixed;
   top: 0;
@@ -18,7 +21,6 @@ html, body{
   padding: 0 15px;
   z-index: 9997;
 }
-
 #header .profile img{
   margin: 15px auto;
   display: block;
@@ -27,7 +29,6 @@ html, body{
   border-color: gray;
   border-radius: 50%;
 }
-
 #header .profile h1{
   font-size: 24px;
   margin: 0;
@@ -37,7 +38,6 @@ html, body{
   text-align-last: center;
   color: #fff;
 }
-
 #header .profile .social-links a{
   font-size: 1rem;
   background: #212431;
@@ -51,15 +51,12 @@ html, body{
   width: 16%;
   justify-content: center;
 }
-
 #header .profile .social-links a:hover{
   background: #149ddd;
 }
-
 .nav-menu{
   padding: 0.5rem;
 }
-
 .nav-menu a,
 .nav-menu a:focus{
   display: flex;
@@ -68,14 +65,12 @@ html, body{
   transition: 0.3s;
   font-size: 16px;
 }
-
 .nav-menu a i,
 .nav-menu a:focus i{
   font-size: 24px;
   padding-right: 14px;
   color: #6f7180;
 }
-
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
@@ -83,7 +78,6 @@ html, body{
   text-decoration: none;
   color: #fff;
 }
-
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
@@ -91,11 +85,9 @@ html, body{
   text-decoration: none;
   color: #149ddd;
 }
-
 #main{
   margin-left: 300px;
 }
-
 section#inicio{
   background-image: url("./img/cs-map.jpeg");
   background-repeat: no-repeat;
@@ -105,24 +97,21 @@ section#inicio{
   width: 100%;
   height: 100vh;
 }
-
 section#inicio h2{
   font-size: 4.5rem;
-  margin-left: 4.5rem;
-  margin-bottom: 0;
-  width: fit-content;
+  /*margin-left: 1.3rem;
+  margin-bottom: 0;*/
+  width: max-content;
 }
 section#inicio span#subtitle{
   font-size: 1.5rem;
-  margin-left: 4.5rem;
+  /*margin-left: 1.3rem;
   margin-bottom: 0;
-  width: fit-content;
+  width: fit-content;*/
 }
-
 .text-shadow{
   text-shadow: 4px 4px 10px #000000;
 }
-
 section#inicio div#arraste{
   width: 9rem;
   
@@ -132,7 +121,6 @@ section#inicio div#arraste a{
   color: #fff;
 
 }
-
 i.menu-mobile{
   position: fixed;
   color:#fff;
@@ -155,7 +143,6 @@ i.menu-mobile{
 .menu-nav-active #header{
   left: 0;
 }
-
 @media(max-width: 1024px){
   #header{
     left: -300px;
@@ -164,17 +151,30 @@ i.menu-mobile{
     display: flex;
   }
   section#inicio h2{
-    margin-left: 10px;
-    font-size: 2.25rem
+    margin-left: 1.3rem;
+    font-size: 3.5rem;
+    width: fit-content;
   }
-  span#subtitle{
-    margin-right: 0;
-    font-size: 1rem;
+  section#inicio span#subtitle{
+    font-size: 1.5rem;
+    margin-left: 1.3rem;    
+    width: fit-content; 
   }
   #main{
     margin-left: 0;
   }
-  section#inicio span#subtitle{
-    margin-left: 10px;
-  }
+}
+*::-webkit-scrollbar{
+  width: 10px;
+}
+*::-webkit-scrollbar-track{
+  width: 12px;
+  box-shadow: inset 0 0 .3rem #00000050;
+  background-color: #fff;
+}
+*::-webkit-scrollbar-thumb{
+  background-color: #020562;
+}
+.bg-skills{
+  background-color: #71f6ff2d;
 }
