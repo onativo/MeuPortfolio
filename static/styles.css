@@ -54,34 +54,38 @@ html{
 #header .profile .social-links a:hover{
   background: #149ddd;
 }
-.nav-menu{
+.nav-item{
   padding: 0.5rem;
 }
-.nav-menu a,
-.nav-menu a:focus{
+.nav-item a,
+.nav-item a:focus{
   display: flex;
   align-items: center;
   color: #a8a9b4;
   transition: 0.3s;
   font-size: 16px;
 }
-.nav-menu a i,
-.nav-menu a:focus i{
+.nav-item a i,
+.nav-item a:active i{
   font-size: 24px;
   padding-right: 14px;
   color: #6f7180;
 }
-.nav-menu a:hover,
-.nav-menu .active,
-.nav-menu .active:focus,
-.nav-menu li:hover > a{
+.nav-item a:hover,
+.nav-item a:active,
+.nav-item a:active:focus,
+.nav-item li:hover > a{
   text-decoration: none;
   color: #fff;
 }
-.nav-menu a:hover i,
-.nav-menu .active i,
-.nav-menu .active:focus i,
-.nav-menu li:hover > a i{
+.nav-item a:hover i,
+.nav-item a.active i,
+.nav-item a.active:focus i,
+.nav-item li:hover > a i{
+  text-decoration: none;
+  color: #149ddd;
+}
+.nav-item .active:focus i{
   text-decoration: none;
   color: #149ddd;
 }
@@ -175,7 +179,7 @@ i.menu-mobile{
 *::-webkit-scrollbar-thumb{
   background-color: #149ddd;
 }
-.bg-skills{
+.bg-section{
   background-color: #149ddd14;
 }
 .border-box{
@@ -217,4 +221,23 @@ i.menu-mobile{
   background-color: #fff;
   left: -9px;
   border-radius: 50%;
+}
+.carousel-indicators{
+  margin-bottom: -40px;
+}
+.cont{
+  margin-left: 0.8rem;
+  max-width: fit-content
+}
+.carousel-control-prev,
+.carousel-control-next{
+  width: 130px;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color:#149ddd56;
+  transition: .6s;
+}
+.nav-item a:active{
+  color: #000000;
 }
