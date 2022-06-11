@@ -49,6 +49,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#certificados"><i class="bi bi-filetype-pdf"></i>Meus Certificados</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato"><i class="bi bi-person-lines-fill"></i>Contato</a>
+          </li>
         </ul>
       </nav>
     </aside>
@@ -243,7 +246,7 @@
       <section id="curriculo" class="mt-2 cv">
         <div class="container pb-3">
           <div class="cont">
-            <h2 class="pb-3 pt-2">Meu Currículo</h2>
+            <h2 class="pb-3 pt-2">Currículo</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eligendi ducimus obcaecati eos
               voluptas? Expedita omnis odit sequi. Eius neque debitis est culpa iusto, nisi quo asperiores ducimus et
               tempora!</p>
@@ -314,9 +317,9 @@
 
       <section id="portfolio" class="bg-section mt-3">
 
-        <div class="container pb-3 pt-3">
+        <div class="container pb-3 pt-3 cont">
 
-          <h2 class="pb-3">Meu Portifólio</h2>
+          <h2 class="pb-3">Portifólio</h2>
 
           <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -414,13 +417,61 @@
       <section id="certificados">
         <div class="container pt-3 cont">
 
-          <h3 class="pb-3 pt-3">Meus Certificados</h3>
+          <h2 class="pb-3 pt-3">Meus Certificados</h2>
           
 
 
         </div>
       </section>
 
+      <section id="contato" class="pt-3 pb-3 bg-section">
+        <div class="container mb-5 cont">
+          <h2 class="pt-3 pb-3">Contatos</h2>
+            <div class="row">
+              <div class="col md-5">
+                <div class="card p-5 shadow border-0">
+                  <div class="endereco">
+                    <h4><i class="bi bi-geo-alt-fill"></i> Localização:</h4>
+                    <p>Jacareí - São Paulo</p>
+                  </div>
+                  <div class="email">
+                    <h4><i class="bi bi-envelope"></i> Email:</h4>
+                    <p>onativo@outlook.com</p>
+                  </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.9392097768116!2d-45.96687997079851!3d-23.324579667544803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb90a869805d%3A0xfce80771305dddec!2sAv.%20Jos%C3%A9%20Francisco%20da%20Silva%20-%20Jacare%C3%AD%2C%20SP%2C%2012319-050!5e0!3m2!1spt-BR!2sbr!4v1654912291463!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100">
+                  </iframe>
+
+                </div>
+              </div>
+
+              <div class="col-md-7 mt-3 mt-md-0">
+                <div class="card p-5 h-100 shadow border-0">
+                  <form class="row g-3">
+
+                    <div class="col-md-6">
+                      <label for="nome" class="form-label">Nome:</label>
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+                    </div>
+
+                    <div class="col-12">
+                      <label for="mensagem" class="form-label">Mensagem</label>
+                      <textarea type="text" class="form-control" id="Mensagem" placeholder="Digite aqui sua mensagem para mim ;)" name="mensagem" rows="10"></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center mt-4">
+                      <button type="submit" class="btn btn-outline-primary">Enviar!</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
       
 
     </main>
