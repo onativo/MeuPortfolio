@@ -66,10 +66,7 @@
         </div>
 
         <div class="col-md-7 d-flex justify-content-end align-items-end">
-          <div id="arraste" class="d-flex align-item-center">
-            <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
-            <a href="#sobre">Veja mais</a>
-          </div>
+          <img src="../static/img/undraw_hello_re_3evm.svg" alt="apreciate" class="svg">
         </div>
 
       </section>
@@ -435,51 +432,59 @@
 
       <section id="contato" class="pt-3 pb-3 bg-section ">
         <div class="container mb-5">
-          <h2 class="pt-3 pb-3">Entre em contato comigo <i class="bi bi-chat-text"></i></h2>
+          <h2 class="pt-3 pb-3">Entre em contato comigo</h2>
 
             <div class="row">
-              <div class="col md-5">
+              <div class="col-md-12 h-100">
+                  <div class="card p-5 shadow border-0"  data-anime="up">
+                    <div class="d-flex">
+                      <div class="endereco links">
+                        <h4><i class="bi bi-geo-alt-fill"></i> Localização:</h4>
+                        <p>Jacareí - São Paulo</p>
+                      </div>
 
-                <div class="card p-5 shadow border-0"  data-anime="up">
-                  <div class="endereco">
-                    <h4><i class="bi bi-geo-alt-fill"></i> Localização:</h4>
-                    <p>Jacareí - São Paulo</p>
-                  </div>
-                  <div class="email">
-                    <h4><i class="bi bi-envelope"></i> Email:</h4>
-                    <p>onativo@outlook.com</p>
-                  </div>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.9392097768116!2d-45.96687997079851!3d-23.324579667544803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb90a869805d%3A0xfce80771305dddec!2sAv.%20Jos%C3%A9%20Francisco%20da%20Silva%20-%20Jacare%C3%AD%2C%20SP%2C%2012319-050!5e0!3m2!1spt-BR!2sbr!4v1654912291463!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100">
-                  </iframe>
-
-                </div>
+                      <div class="email links">
+                        <h4><i class="bi bi-envelope"></i> Email:</h4>
+                        <a href="mailto:onativo@outlook.com?subject=Contato via portfólio">onativo@outlook.com</a>
+                      </div>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.9392097768116!2d-45.96687997079851!3d-23.324579667544803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb90a869805d%3A0xfce80771305dddec!2sAv.%20Jos%C3%A9%20Francisco%20da%20Silva%20-%20Jacare%C3%AD%2C%20SP%2C%2012319-050!5e0!3m2!1spt-BR!2sbr!4v1654912291463!5m2!1spt-BR!2sbr" width="400" height="500" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100">
+                    </iframe>
+                  </div>                  
               </div>
+              
+              <!--
+              <div class="col-md-2 mt-3 mt-md-0"  data-anime="left">
 
-              <div class="col-md-7 mt-3 mt-md-0"  data-anime="left">
+                <img src="../static/img/undraw_message_sent_re_q2kl.svg" alt="contato" class="svg-contato">
+                
+                  removi esse form pq achei a forma de envio de email muito insegura, melhor deixar que o usuário envie um email através do seu próprio gerenciador de emails
                 <div class="card p-5 h-100 shadow border-0">
-                  <form class="row g-3">
+                  <form class="row g-3" action="mailto:onativo@outlook.com" method="POST" enctype="text/plain">
 
                     <div class="col-md-6">
                       <label for="nome" class="form-label">Nome:</label>
-                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
                     </div>
 
                     <div class="col-md-6">
                       <label for="email" class="form-label">Email:</label>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
                     </div>
 
                     <div class="col-12">
                       <label for="mensagem" class="form-label">Mensagem</label>
-                      <textarea type="text" class="form-control" id="Mensagem" placeholder="Digite aqui sua mensagem para mim ;)" name="mensagem" rows="10"></textarea>
+                      <textarea type="text" class="form-control" id="Mensagem" placeholder="Digite aqui sua mensagem para mim ;)" required name="mensagem" rows="10"></textarea>
                     </div>
                     <div class="col-12 d-flex justify-content-center mt-4">
                       <button type="submit" class="btn btn-outline-primary">Enviar!</button>
+                      <input type="reset" value="Limpar" class="btn btn-outline-primary" style="margin-left: 15px;">
                     </div>
+                    
 
                   </form>
                 </div>
-              </div>
+-->
             </div>
         </div>
       </section>
