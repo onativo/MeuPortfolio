@@ -92,6 +92,7 @@ html{
 }
 section#inicio{
   background-image: url("../img/cs-map.jpg");
+  /*teste*/
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
