@@ -91,7 +91,7 @@ html{
   margin-left: 300px;
 }
 section#inicio{
-  background-image: url("/static/img/cs-map.jpeg");
+  background-image: url("../img/cs-map.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
