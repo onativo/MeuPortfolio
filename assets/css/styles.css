@@ -91,7 +91,7 @@ html{
   margin-left: 300px;
 }
 section#inicio{
-  background-image: url("../img/cs-map.jpeg");
+  background-image: url("img/cs-map.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -296,4 +296,8 @@ i.menu-mobile{
 .links i:hover,
 .links h4:hover{
   color: #139ddc;
+}
+.icon-certificate{
+  height: 200px;
+  width: 300px;
 }
