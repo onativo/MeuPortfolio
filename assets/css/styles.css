@@ -173,6 +173,9 @@ i.menu-mobile{
     margin-left: 0;
     margin: auto;
   }
+  .tabela li{
+    font-size: 16px;
+  }
 }
 *::-webkit-scrollbar{
   width: 10px;
@@ -321,4 +324,35 @@ i.menu-mobile{
 .link-certificado a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+#footer{
+  padding: 5px;
+  position: fixed;
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background-color: #313842;
+  transition: .3s;
+}
+@media (max-width: 990px){
+  #footer{
+    position: static;
+    width: auto;
+    padding: 15px 10px;
+  }
+}
+@media (max-width: 490px){
+  .contatos{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+  }
+  .contato-email{
+    display: flex;
+    max-width: 100px;
+  }
 }
