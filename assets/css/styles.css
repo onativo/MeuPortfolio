@@ -356,3 +356,14 @@ i.menu-mobile{
     max-width: 100px;
   }
 }
+.clique_aqui{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  margin-bottom: 0px;
+  color: #000000;
+  transition: all .2s ease-in-out;
+}
+.clique_aqui:hover{
+  transform: scale(1.1)
+}
