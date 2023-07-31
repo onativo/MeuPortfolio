@@ -189,8 +189,10 @@ i.menu-mobile{
   background-color: #149ddd;
 }
 .bg-section{
-  background-color: #149ddd14;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(48, 169, 225, 0.274) 50%, rgba(255,255,255,1) 100%); 
 }
+
 .border-box{
   box-shadow: 4px 4px 36px #139ddc2e;
 }
@@ -236,7 +238,7 @@ i.menu-mobile{
 }
 .carousel-control-prev,
 .carousel-control-next{
-  width: 130px;
+  width: 40px;
 }
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
@@ -366,4 +368,23 @@ i.menu-mobile{
 }
 .clique_aqui:hover{
   transform: scale(1.1)
+}
+.details li{
+  font-size: 18px;
+}
+.recuo{
+  text-indent:2em;
+  margin: 0px;
+}
+.hard_skill{
+  width: 80%;
+  margin: 0 auto;
+}
+.hard_skill img{
+  max-width: 115px;
+  transition: transform .6s;
+  margin: 0 auto;
+}
+.hard_skill img:hover{
+  transform: scale(1.2);
 }
