@@ -229,7 +229,7 @@ i.menu-mobile{
   width: 16px;
   height: 16px;
   border: 2px solid #139ddc;
-  background-color: #fff;
+  background-color: #139ddc;
   left: -9px;
   border-radius: 50%;
 }
@@ -297,10 +297,12 @@ i.menu-mobile{
 }
 .links{
   margin-right: 25px;
-  cursor: default;  
 }
-.links i:hover,
-.links h4:hover{
+.links a{
+  text-decoration: none;
+  color: #000000;
+}
+.links a:hover{
   color: #139ddc;
 }
 .link-certificado a{
@@ -367,7 +369,7 @@ i.menu-mobile{
   transition: all .2s ease-in-out;
 }
 .clique_aqui:hover{
-  transform: scale(1.1)
+  text-decoration: underline;
 }
 .details li{
   font-size: 18px;
@@ -377,7 +379,7 @@ i.menu-mobile{
   margin: 0px;
 }
 .hard_skill{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 .hard_skill img{
@@ -387,4 +389,7 @@ i.menu-mobile{
 }
 .hard_skill img:hover{
   transform: scale(1.2);
+}
+.tabela li a{
+  font-size: 15px;
 }
